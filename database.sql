@@ -1,0 +1,9 @@
+CREATE DATABASE parsa_concrete;
+USE parsa_concrete;
+
+CREATE TABLE invoices(
+id INT AUTO_INCREMENT PRIMARY KEY,
+customer VARCHAR(255),
+amount DECIMAL(10,2),
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
